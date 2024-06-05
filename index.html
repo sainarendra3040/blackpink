@@ -3,22 +3,12 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <p id="count1-el">0</p>
-                <button id = "add1-btn" onclick="add1()">+1</button>
-                <button id = "add2-btn" onclick="add2()">+2</button>
-                <button id = "add3-btn" onclick="add3()">+3</button>
-            </div>
-            <div>
-                <h3>GUEST</h3>
-                <p id="count2-el">0</p>
-                <button id = "add1-btn" onclick="adda()">+1</button>
-                <button id = "add2-btn" onclick="addb()">+2</button>
-                <button id = "add3-btn" onclick="addc()">+3</button>
-            </div>
-        </div>
+        <div class = "container">
+        <h1>People entered:</h1>
+        <h2 id="count-el">0</h2>
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <p id="save-el">Previous entires:</p>
         <script src="index.js"></script>
     </body>
 </html>
