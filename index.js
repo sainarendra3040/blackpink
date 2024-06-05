@@ -1,16 +1,30 @@
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
-let count = 0
+let countEl1 = document.getElementById("count1-el")
+let countEl2 = document.getElementById("count2-el")
+let count1 = 0
+let count2 = 0
 
-
-function increment() {
-    count += 1
-    countEl.innerText = count
+function add1() {
+    count1 += 1
+    countEl1.innerText = count1
+}
+function add2() {
+    count1 += 4
+    countEl1.innerText = count1
+}
+function add3() {
+    count1 += 6
+    countEl1.innerText = count1
 }
 
-function save() {
-    let countStr = count + " - "
-    saveEl.innerText += countStr
-    countEl.innerText = 0
-    count = 0
+function adda() {
+    count2 += 1
+    countEl2.innerText = count2
+}
+function addb() {
+    count2 += 4
+    countEl2.innerText = count2
+}
+function addc() {
+    count2 += 6
+    countEl2.innerText = count2
 }
