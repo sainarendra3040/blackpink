@@ -2,46 +2,37 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url(neo.jpg);
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-weight: bold;
     color: white;
     text-align: center;
 }
-container {
-    width: 500px;
-    height: 300px;
-    margin: 200px auto;
-}
-
-
-
 h1 {
     color: pink;
     margin-top: 40px;
+    font-size: 10vw;
     
 }
-
 p{
-    font-size: 40px;
-    bo
-}    
+    font-size: 7vw;
+    font-style: italic;
     
-    
-    
-
+}
+h2{
+    font-size: 6vw;
+}
+h3{
+    font-size: 6vw;
+}
 button{
-    
-    color:black ;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:bold ;
-    width: 150px;
-    background-color: pink;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    width: 45vw;
+    background: pink;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-weight: bold;
     border: none;
-    box-shadow: 2px;
-    border-radius: 3px;
-    margin-bottom: 5px;
-    margin-top: 4px;
-    
+    border-radius: 2vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
 }
