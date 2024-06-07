@@ -1,24 +1,25 @@
+<!doctype html>
 <html>
     <head>
+        <title></title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
+        <h1>BLACKPINK</h1>
+        <h2>get lucky with 7 </h2>
+        
+            
+        <p id = "message-el" >want to play:</p>
+        
+            <h2 id = "cards-el">cards :</h2>
+             <h3 id = "sum-el">sum :</h3>
+           
+             <button onclick= "startGame()">START GAME</button>
+            <button  onclick="newCard()">NEW NUMBER</button>
+            
             <div>
-                <h3>HOME</h3>
-                <p id="count1-el">0</p>
-                <button id = "add1-btn" onclick="add1()">+1</button>
-                <button id = "add2-btn" onclick="add2()">+4</button>
-                <button id = "add3-btn" onclick="add3()">+6</button>
+             <button  onclick="window.location.reload()">RESET</button>
             </div>
-            <div>
-                <h3>GUEST</h3>
-                <p id="count2-el">0</p>
-                <button id = "add1-btn" onclick="adda()">+1</button>
-                <button id = "add2-btn" onclick="addb()">+4</button>
-                <button id = "add3-btn" onclick="addc()">+6</button>
-            </div>
-        </div>
         <script src="index.js"></script>
     </body>
 </html>

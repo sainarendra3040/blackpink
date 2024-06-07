@@ -1,30 +1,70 @@
-let countEl1 = document.getElementById("count1-el")
-let countEl2 = document.getElementById("count2-el")
-let count1 = 0
-let count2 = 0
+let cards = []
+let sum = 0
+let hasWon = false
+let alive = true
+let message = ""
+let messageEl = document.getElementById("message-el")
+let sumEl = document.getElementById("sum-el")
+let cardsEl = document.getElementById("cards-el")
+let resetEl = document.getElementById("reset-el")
 
-function add1() {
-    count1 += 1
-    countEl1.innerText = count1
-}
-function add2() {
-    count1 += 4
-    countEl1.innerText = count1
-}
-function add3() {
-    count1 += 6
-    countEl1.innerText = count1
+function startGame(){
+    let card1 = getRandomCard()
+    let card2 = getRandomCard()
+     cards = [card1,card2]
+    sum = card1 + card2
+    renderGame()
 }
 
-function adda() {
-    count2 += 1
-    countEl2.innerText = count2
+
+
+function getRandomCard (){
+    let ramdomCard = Math.floor(Math.random()*6+1)
+    return ramdomCard
 }
-function addb() {
-    count2 += 4
-    countEl2.innerText = count2
+
+function renderGame(){
+    cardsEl.textContent = "Cards: "
+     
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i]+","
+    }
+  
+     sumEl.textContent = "sum:" + sum
+    if (sum < 7){
+        sumEl.textContent = "sum:" + sum
+    message="draw an another number"
+    alive = true
 }
-function addc() {
-    count2 += 6
-    countEl2.innerText = count2
+else if(sum === 7){
+    message="you won , THALA FOR REASON !"
+    hasWon = true
+    
 }
+else {
+    message="you lost!"
+    alive = false
+  
+}
+ messageEl.textContent = message
+ 
+}
+
+
+
+function newCard(){
+    if(hasWon===false && alive === true){
+    let newCard = getRandomCard()
+    sum += newCard
+    cards.push(newCard)
+    renderGame()
+ }
+ 
+ 
+    
+    
+
+ 
+}
+
+    
